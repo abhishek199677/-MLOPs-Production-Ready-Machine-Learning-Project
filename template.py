@@ -5,7 +5,7 @@ project_name = "us_visa"     #partent folder name
 
 list_of_files = [
 
-    f"{project_name}/__init__.py",    #constructor file
+    f"{project_name}/__init__.py",    #constructor file for components folder
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",  
     f"{project_name}/components/data_validation.py",
@@ -13,17 +13,17 @@ list_of_files = [
     f"{project_name}/components/model_trainer.py",
     f"{project_name}/components/model_evaluation.py",
     f"{project_name}/components/model_pusher.py",
-    f"{project_name}/configuration/__init__.py",
-    f"{project_name}/constants/__init__.py",
-    f"{project_name}/entity/__init__.py",
+    f"{project_name}/configuration/__init__.py",      #constructor file for configuraton folder
+    f"{project_name}/constants/__init__.py",          #constructor file for constants folder
+    f"{project_name}/entity/__init__.py",             #constructor file for entity folder
     f"{project_name}/entity/config_entity.py",
     f"{project_name}/entity/artifact_entity.py",
-    f"{project_name}/exception/__init__.py",
-    f"{project_name}/logger/__init__.py",
-    f"{project_name}/pipline/__init__.py",
+    f"{project_name}/exception/__init__.py",           #constructor file for exception folder
+    f"{project_name}/logger/__init__.py",              #constructor file for logger folder
+    f"{project_name}/pipline/__init__.py",             #constructor file for pipline folder
     f"{project_name}/pipline/training_pipeline.py",
     f"{project_name}/pipline/prediction_pipeline.py",
-    f"{project_name}/utils/__init__.py",
+    f"{project_name}/utils/__init__.py",                #constructuir file for utils folder
     f"{project_name}/utils/main_utils.py",
     "app.py",
     "requirements.txt",
