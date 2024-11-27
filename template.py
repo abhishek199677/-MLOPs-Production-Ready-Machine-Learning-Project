@@ -1,11 +1,11 @@
 import os
 from pathlib import Path
 
-project_name = "us_visa"
+project_name = "us_visa"     #partent folder name
 
 list_of_files = [
 
-    f"{project_name}/__init__.py",
+    f"{project_name}/__init__.py",    #constructor file
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",  
     f"{project_name}/components/data_validation.py",
