@@ -37,7 +37,7 @@ list_of_files = [
 
 
 
-for filepath in list_of_files:      #iterating through each file
+for filepath in list_of_files:      #iterating through each file 
     filepath = Path(filepath)        
     filedir, filename = os.path.split(filepath)  
     if filedir != "":
