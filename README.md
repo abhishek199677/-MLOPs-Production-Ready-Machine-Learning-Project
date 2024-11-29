@@ -16,3 +16,14 @@ Data link: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
 conda create -n visa python=3.8 -y
 conda activate visa
 pip install -r requirements.txt
+
+
+
+<!-- Workflow: -->
+
+constants
+entity
+components
+pipeline
+Main file
+
