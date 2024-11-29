@@ -10,7 +10,14 @@ from us_visa.exception import USvisaException
 from us_visa.logger import logging
 
 
-def read_yaml_file(file_path: str) -> dict:
+'''
+
+These functions will frequently be using in the code
+
+'''
+
+
+def read_yaml_file(file_path: str) -> dict:         #to read a yaml file use this fucntion
     try:
         with open(file_path, "rb") as yaml_file:
             return yaml.safe_load(yaml_file)
@@ -20,8 +27,8 @@ def read_yaml_file(file_path: str) -> dict:
     
 
 
-def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:
-    try:
+def write_yaml_file(file_path: str, content: object, replace: bool = False) -> None:    #to write yaml file or to write something in yaml file use this fucntion
+    try: 
         if replace:
             if os.path.exists(file_path):
                 os.remove(file_path)
@@ -34,7 +41,7 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
 
 
 
-def load_object(file_path: str) -> object:
+def load_object(file_path: str) -> object:                       #loading any kind or pickle object or any binary file use this fucntion
     logging.info("Entered the load_object method of utils")
 
     try:
@@ -51,7 +58,7 @@ def load_object(file_path: str) -> object:
     
 
 
-def save_numpy_array_data(file_path: str, array: np.array):
+def save_numpy_array_data(file_path: str, array: np.array):       #to save data to numpy array use this fucntion
     """
     Save numpy array data to file
     file_path: str location of file to save
@@ -68,7 +75,7 @@ def save_numpy_array_data(file_path: str, array: np.array):
 
 
 
-def load_numpy_array_data(file_path: str) -> np.array:
+def load_numpy_array_data(file_path: str) -> np.array:     #to load any numpy array use this fucntion
     """
     load numpy array data from file
     file_path: str location of file to load
@@ -83,8 +90,8 @@ def load_numpy_array_data(file_path: str) -> np.array:
 
 
 
-def save_object(file_path: str, obj: object) -> None:
-    logging.info("Entered the save_object method of utils")
+def save_object(file_path: str, obj: object) -> None:         #to save any object in pickle format use this fucntion
+    logging.info("Entered the save_object method of utils")  
 
     try:
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
@@ -98,7 +105,7 @@ def save_object(file_path: str, obj: object) -> None:
 
 
 
-def drop_columns(df: DataFrame, cols: list)-> DataFrame:
+def drop_columns(df: DataFrame, cols: list)-> DataFrame:        #to drop any column use this fucntion
 
     """
     drop the columns form a pandas DataFrame
