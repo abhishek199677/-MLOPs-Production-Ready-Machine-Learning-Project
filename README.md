@@ -1,6 +1,7 @@
-<!-- MLOPs-Production-Ready-Machine-Learning-Project -->
+## MLOPs-Production-Ready-Machine-Learning-Project
 
 
+``` bash
 
 Anaconda: https://www.anaconda.com/
 Vs code: https://code.visualstudio.com/download
@@ -10,20 +11,24 @@ MLOPs Tool: https://www.evidentlyai.com/
 MongoDB: https://account.mongodb.com/account/login
 Data link: https://www.kaggle.com/datasets/moro23/easyvisa-dataset
 
+```
 
-<!-- How to run? -->
+## How to run?
+```bash
 
 conda create -n visa python=3.8 -y
 conda activate visa
 pip install -r requirements.txt
 
+```
 
+## Workflow:
 
-<!-- Workflow: -->
-
+```bash
 constants
 entity
 components
 pipeline
 Main file
 
+```
