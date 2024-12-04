@@ -31,7 +31,7 @@ categorical_columns:
 drop_columns:
   - case_id
   - yr_of_estab
-  
+
 
 # for data transformation
 num_features:
@@ -39,13 +39,13 @@ num_features:
   - prevailing_wage
   - company_age
 
-or_columns:
+or_columns:   #ordinal columns
   - has_job_experience
   - requires_job_training
   - full_time_position
   - education_of_employee
 
-oh_columns:
+oh_columns:   #one hot encoding columns
   - continent
   - unit_of_wage
   - region_of_employment

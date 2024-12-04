@@ -16,6 +16,7 @@ class DataIngestion:
     def __init__(self,data_ingestion_config:DataIngestionConfig=DataIngestionConfig()):
         """
         :param data_ingestion_config: configuration for data ingestion
+        
         """
         try:
             self.data_ingestion_config = data_ingestion_config
