@@ -22,6 +22,7 @@ def read_yaml_file(file_path: str) -> dict:         #to read a yaml file use thi
         with open(file_path, "rb") as yaml_file:
             return yaml.safe_load(yaml_file)
 
+
     except Exception as e:
         raise USvisaException(e, sys) from e
     
@@ -58,7 +59,7 @@ def load_object(file_path: str) -> object:                       #loading any ki
     
 
 
-def save_numpy_array_data(file_path: str, array: np.array):       #to save data to numpy array use this fucntion
+def save_numpy_array_data(file_path: str, array: np.array):       #to save data to numpy array use this function
     """
     Save numpy array data to file
     file_path: str location of file to save
@@ -112,7 +113,7 @@ def drop_columns(df: DataFrame, cols: list)-> DataFrame:        #to drop any col
     df: pandas DataFrame
     cols: list of columns to be dropped
     """
-    logging.info("Entered drop_columns methon of utils")
+    logging.info("Entered drop_columns method of utils")
 
     try:
         df = df.drop(columns=cols, axis=1)
